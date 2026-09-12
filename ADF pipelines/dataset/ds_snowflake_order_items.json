@@ -1,0 +1,17 @@
+{
+	"name": "ds_snowflake_order_items",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_snowflake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [],
+		"typeProperties": {
+			"schema": "PUBLIC",
+			"table": "ORDER_ITEMS_DATASET"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

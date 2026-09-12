@@ -1,0 +1,30 @@
+{
+	"name": "tr_snowflake_blob_created",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL2_RAW_DATA",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"Trigger": "tr_sample_snowflake",
+					"filename": "@trigger().outputs.body.fileName",
+					"source_dir": "@trigger().outputs.body.folderPath"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/bronze/blobs/snowflake/",
+			"blobPathEndsWith": ".parquet",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/4c88b290-91c1-434c-acc5-49eedac61935/resourceGroups/vb_project/providers/Microsoft.Storage/storageAccounts/ecommersproject",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

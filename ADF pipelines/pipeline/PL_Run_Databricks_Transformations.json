@@ -1,0 +1,30 @@
+{
+	"name": "PL_Run_Databricks_Transformations",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/asupraja999@gmail.com/SCD 1&2"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricksnotebook",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-09-12T14:26:04Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

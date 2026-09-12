@@ -1,0 +1,15 @@
+{
+	"name": "vbecommerce",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e93f7cf3-e47a-430b-85ee-ce0e5957107a",
+		"tenantId": "576b6dd1-175b-417a-b631-0c815723c927"
+	}
+}

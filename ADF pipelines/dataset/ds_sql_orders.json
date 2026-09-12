@@ -1,0 +1,17 @@
+{
+	"name": "ds_sql_orders",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "olist_orders_dataset"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
